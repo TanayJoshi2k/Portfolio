@@ -1,0 +1,221 @@
+
+#hello { 
+  color: white; 
+  font-size: 4rem;
+  margin-bottom: -2.3%;
+}
+
+#tanay { 
+  color: white;
+  font-size: 3rem;
+  margin-bottom: -2.3%;
+} 
+
+#about_container {
+  background: url('images/about_bkg.PNG');
+  background-repeat: no-repeat;  
+  background-position:center;
+  background-size: 100% 100%; 
+
+}
+
+#about_title {
+  color: rgb(0, 0, 0); 
+  font-family: 'Playfair Display', serif; 
+  font-size: 4rem; 
+  font-weight:500;
+}
+
+.about_me {
+  color: #ffffff;
+  font-family: 'Fira Code'; 
+  text-decoration: none;
+  font-size: 2rem;   
+  margin: 0 auto;
+  display:inline; 
+  padding: 10%;
+}
+
+.h1 {
+  font-size: 30px;
+}
+
+.text_1 {
+  animation: text1;
+}
+
+.text_2 {
+  animation: text2;
+}
+
+.text_1, .text_2 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 15s;
+  animation-timing-function: steps(30, 50);
+  animation-iteration-count: infinite; 
+  color: #AEC6CF;
+}
+
+.text_1::after, .text_2::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+@keyframes text2 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  
+  60%, 90% {
+    width: 10em;
+  }
+}
+
+@keyframes text1 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  10%, 40% {
+    width: 9em;
+  }
+}
+
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.tapered {
+  background-image: linear-gradient(179deg,rgb(254, 97, 158) 0%, rgb(255, 5, 101) 50%,transparent 54%, transparent 100%);
+  background-size:  100% 15%;
+  background-repeat: repeat-x;
+  background-position: left 0% bottom 10%;
+     
+}
+
+
+.card-text {
+  background: linear-gradient(#ca9d83, #d4a081);
+  -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;  
+ font-family: 'Open Sans', sans-serif; 
+ font-size: 1.5rem;
+
+}
+#nav {
+  background-color: #020202;
+}
+.navbar-toggler{
+  background-color: #020202;
+}
+
+#home {
+  color:rgb(129, 129, 129);
+  font-size: 1rem;
+} 
+
+#skills {
+  color:rgb(129, 129, 129);
+  font-size: 1rem;
+} 
+
+#exp {
+  color:rgb(129, 129, 129); 
+  font-size: 1rem;
+} 
+
+#resume {
+  color:rgb(129, 129, 129);
+  font-size: 1rem;
+}  
+
+.nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.nav-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: linear-gradient(#ffae00, #ff6600);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+#my_skills {
+  color: white;
+  font-family: 'Fira Code';
+  text-align: center; 
+  margin-bottom: 2%; 
+  font-size: 3rem;
+}
+
+#lang {
+  color: #BB86FC;
+  font-family: 'Fira Code';
+  text-align: center; 
+  margin-bottom: 3%; 
+  font-size: 2.5rem;
+}
+
+#db {
+  color: #BB86FC;
+  font-family: 'Fira Code';
+  text-align: center; 
+  margin-bottom: 2%; 
+  margin-top: 3%;
+  font-size: 2.5rem;
+}
+
+#lib {
+  color: #BB86FC;
+  font-family: 'Fira Code';
+  text-align: center; 
+  margin-bottom: 2%; 
+  margin-top: 3%;
+  font-size: 2.5rem;
+}
+
+.lang_cards {
+  background-color: #0A0A0A;  
+  margin-bottom: 5%; 
+  margin-top: 5%; 
+  color: white; 
+  font-family: 'Fira Code', serif; 
+  border-radius: 10px;
+}
+
+#connect {
+color: #03DAC5  
+}
+svg {
+color: white ;
+}
+
+#footer {
+margin-top: 10%;
+}
