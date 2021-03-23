@@ -12,7 +12,7 @@
 } 
 
 #about_container {
-  background: url('images/about_bkg.PNG');
+  background: url('../images/about_bkg.PNG');
   background-repeat: no-repeat;  
   background-position:center;
   background-size: 100% 100%; 
