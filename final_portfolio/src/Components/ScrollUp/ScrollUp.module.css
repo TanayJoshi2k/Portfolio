@@ -1,0 +1,7 @@
+.scrollUp {
+  position: absolute;
+  right: 0;
+  top: 100;
+  border: none;
+  background-color: rebeccapurple;
+}

@@ -1,0 +1,195 @@
+.projectsTitle {
+  color: #33D69A;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Titillium Web";
+  font-weight: 100;
+  letter-spacing: 1.5px;
+}
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+}
+
+.link {
+  display: inline;
+  color: #ffffff;
+  margin: 1rem auto;
+  font-family: "Fira Code";
+  
+}
+.link:hover {
+  color: #fbfbff;
+  text-decoration: underline;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  color: #33d69a;
+  background: rgba(13, 1, 6, 0.25);
+  padding: 0.1rem 0.5rem;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+.project > a {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+.imgContainer {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.project_img {
+  height: 100%;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  border-radius: 5px;
+}
+.test {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.techStackContainer {
+  margin-bottom: 0;
+}
+
+.techStack {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.techStack > div {
+  font-size: 0.85rem;
+  background: #283449;
+  color: #33d69a;
+
+  border-radius: 5px;
+  padding: 0.3rem;
+  margin: 0.2rem;
+  letter-spacing: 0.5px;
+}
+
+.techStack > div:hover {
+  color: #0d0106;
+  background: #33d69a;
+}
+
+@media (min-width: 360px) and (max-width: 544px) {
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+  }
+
+  .project {
+    width: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .test > p {
+    margin-bottom: 0.5rem;
+    font-family: "Fira Code";
+    font-size: 1.25rem;
+    white-space: initial;
+  }
+
+  .techStack > div {
+    font-size: 0.8rem;
+    padding: 0.3rem;
+    margin: 0.2rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .techStack > div:hover {
+    color: #0d0106;
+    background: #33d69a;
+  }
+}
+@media (min-width: 545px) and (max-width: 767px) {
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .project {
+    width: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .techStack > div {
+    font-size: 0.75rem;
+    padding: 0.3rem;
+    margin: 0.2rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .techStack > div:hover {
+    color: #0d0106;
+    background: #33d69a;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .project {
+    width: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .skills {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .test > p {
+    margin-bottom: 0.5rem;
+    font-family: "Fira Code";
+    font-size: 1.5rem;
+    white-space: initial;
+  }
+
+  .techStack > div {
+    font-size: 1rem;
+    padding: 0.3rem;
+    margin: 0.2rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .techStack > div:hover {
+    color: #0d0106;
+    background: #33d69a;
+  }
+}

@@ -1,0 +1,93 @@
+.educationContainer {
+  width: 100vw;
+  max-width: 100%;
+  background: #283449;
+  display: flex;
+  flex-direction: column;
+}
+.edTitle {
+  color: #33D69A;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Titillium Web";
+  font-weight: 100;
+  letter-spacing: 1.5px;
+}
+
+.BE {
+  width: 95%;
+  align-self: center;
+  background: #202837;
+  display: flex;
+  border-radius: 1rem;
+  margin: 0 auto;
+  margin-bottom: 4%;
+}
+.BEImage {
+  padding: 1rem;
+  display: flex;
+}
+.BEImage > img {
+  height: 100px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+.clgContainer {
+  width: auto;
+  color: #fbfbff;
+  height: 100%;
+  width: 100%;
+  align-self: flex-start;
+}
+.clgName {
+  font-size: 1.4rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.degree {
+  font-size: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.marks {
+  font-size: 0.9rem;
+  color: #33D69A;
+  font-family: "Fira Code";
+}
+
+@media (min-width: 360px) and (max-width: 544px) {
+  .edTitle {
+    margin: 1rem auto;
+    font-size: 2.5rem;
+  }
+
+  .BE {
+    display: block;
+  }
+  .BEImage {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .clgName {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .degree {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .marks {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
