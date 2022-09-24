@@ -1,0 +1,288 @@
+html,
+body {
+  font-family: "Fira Code";
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: #202837;
+}
+
+.cdContainer {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+  background: #2b343a;
+  padding: 0 10%;
+  border-radius: 2px;
+}
+.cdContainer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+
+.experience {
+  color: #33D69A;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Titillium Web";
+  font-weight: 100;
+  letter-spacing: 1.5px;
+}
+
+.cdTimeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.cdTimeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 25px;
+  height: 100%;
+  width: 4px;
+  background: #f2f2f2;  /* fallback for old browsers */
+}
+@media only screen and (min-width: 1170px) {
+  .cdTimeline {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  .cdTimeline::before {
+    left: 50%;
+    margin-left: -2px;
+  }
+}
+
+.cdTimelineBlock {
+  position: relative;
+  margin: 2em 0;
+}
+.cdTimelineBlock:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cdTimelineBlock:first-child {
+  margin-top: 0;
+}
+.cdTimelineBlock:last-child {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 1170px) {
+  .cdTimelineBlock {
+    margin: 4em 0;
+  }
+  .cdTimelineBlock:first-child {
+    margin-top: 0;
+  }
+  .cdTimelineBlock:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cdTimelineImg {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #33D69A;
+}
+.cdTimelineImg{
+  background: #283449;
+}
+@media only screen and (min-width: 1170px) {
+  .cdTimelineImg {
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: 15px;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+}
+
+.cdTimelineContent {
+  position: relative;
+  margin-left: 60px;
+  margin-right: 30px;
+  background: #283449;
+  border-radius: 2px;
+  padding: 1em;
+}
+
+.contentSkills {
+  font-size: 12px;
+  padding: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contentSkills > li {
+  background: #40484d;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 2px 10px;
+  color: black;
+  margin: 3px 2px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.timelineContentInfo {
+  background: #f2f2f2;
+  padding: 0.5rem;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid;
+  border-radius: 2px;
+  font-family: 'Titillium Web';
+}
+
+.timelineContentInfo > i {
+  margin-right: 5px;
+}
+
+.timelineContentInfo > .timelineContentInfoTitle,
+.timelineContentInfoDate {
+  width: calc(50% - 2px);
+  display: inline-block;
+  
+}
+
+@media (max-width: 500px) {
+
+  .experience {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  .timelineContentInfoTitle,
+  .timelineContentInfoDate {
+    display: block;
+    width: 100%;
+  }
+}
+
+.cdTimelineContent:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cdTimelineContent h2 {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.cdTimelineContent p,
+.cdTimelineContent .cdDate {
+  color: #33D69A;
+  font-size: 1rem;
+  font-family:'Fira Code';
+}
+.cdTimelineContent .cdDate {
+  display: inline-block;
+}
+.cdTimelineContent p {
+  margin: 1em 0;
+  line-height: 1.6;
+}
+
+.cdTimelineContent::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid #333c42;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .experience {
+    font-size: 3rem;
+    margin: 2.5rem auto;
+    margin-bottom: 0;
+  }
+
+  .cdTimelineContent h2 {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+  .cdTimelineContent p {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .cdTimelineContent .cd-read-more,
+  .cdTimelineContent .cdDate {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (min-width: 1170px) {
+
+  .experience {
+    font-size: 3.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+  }
+
+  .cdTimelineContent {
+    color: white;
+    margin-left: 0;
+    padding: 1.6em;
+    width: 36%;
+    margin: 0 5%;
+  }
+  .cdTimelineContent::before {
+    top: 24px;
+    left: 100%;
+    border-color: transparent;
+    border-left-color: #333c42;
+  }
+  .cdTimelineContent .cdDate {
+    position: absolute;
+    width: 100%;
+    left: 122%;
+    top: 6px;
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .cdTimelineBlock:nth-child(even) .cdTimelineContent {
+    float: right;
+  }
+  .cdTimelineBlock:nth-child(even) .cdTimelineContent::before {
+    top: 24px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: #333c42;
+  }
+  .cdTimelineBlock:nth-child(even) .cdTimelineContent .cd-read-more {
+    float: right;
+  }
+  .cdTimelineBlock:nth-child(even) .cdTimelineContent .cdDate {
+    left: auto;
+    right: 122%;
+    text-align: right;
+  }
+}
+

@@ -1,0 +1,171 @@
+.showNav {
+  margin: 0;
+  padding: 0;
+  backdrop-filter: blur(5px);
+  font-family:"Fira Code";
+  letter-spacing: 0.15rem;
+  z-index: 50;
+}
+.hideNav {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0.75rem;
+  background:transparent;
+  backdrop-filter: blur(5px);
+  font-family:"Fira Code";
+  letter-spacing: 0.1rem;
+  display: flex;
+  z-index: 50;
+}
+
+.showHr,
+.hideHr {
+  display: none;
+}
+
+.liContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+  padding: 0.5rem 0.8rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  position: relative;
+  
+}
+
+li > a:hover::after {
+  content: "_";
+  color: #657ED4;
+  font-size: 1.5rem;
+  position: absolute;
+  margin: auto;
+  left:50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  
+}
+
+li > a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-family:"Fira Code";
+}
+
+li > a:hover {
+  text-decoration: none;
+}
+
+.liContainer > li:nth-of-type(1) > a {
+  font-size: 1rem;
+  color: #33D69A;
+}
+
+
+.toggleNav {
+  display: none;
+}
+
+@media screen and (min-width: 360px) and (max-width: 564px) {
+
+
+  .showNav {
+    position: fixed;
+    inset: 0 0 0 45%;
+    background: rgba(40, 52, 73, 0.5);
+    margin-top: 0;
+  }
+.liContainer > li:nth-of-type(1) > a {
+  display: none;
+}
+  .hideNav {
+    display: none;
+    visibility: hidden;
+  }
+
+  .showHr {
+    display: block;
+  }
+
+  .hideHr {
+    display: none;
+  }
+
+  .hr {
+    background-color: #fafafa;
+    border: 0 none;
+    height: 1px;
+    width: 75%;
+    margin-top: 2rem;
+  }
+  .logo {
+    text-align: center;
+  }
+  .logo > a {
+    color: #33D69A;
+    font-family: "Fira Code";
+    font-size: 1.1rem;
+
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .liContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20%;
+    height: auto;
+  }
+
+  li {
+    text-align: left;
+    margin-top: 10%;
+    color: white;
+    font-size: 1rem;
+  }
+
+  .toggleNav {
+    display: block;
+    position: fixed;
+    right: 1rem;
+    top: 0.5rem;
+    background: inherit;
+    border: none;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    z-index: 100000;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 565px) and (max-width:767px) {
+   
+  li {
+    font-size: 0.55rem;
+  }
+
+  .liContainer > li:nth-of-type(1) > a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:1199px) {
+   
+  li {
+    font-size: 0.7rem;
+  }
+
+  .liContainer > li:nth-of-type(1) > a {
+    font-size: 0.9rem;
+  }
+}

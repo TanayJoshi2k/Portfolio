@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  width: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.footer > div {
+  margin-right: auto;
+}
+
